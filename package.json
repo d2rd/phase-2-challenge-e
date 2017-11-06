@@ -1,0 +1,39 @@
+{
+  "name": "phase-2-challenge-e",
+  "version": "1.0.0",
+  "description": "LG Phase 2 Interview Challenge",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "list": "^1.0.0",
+    "tests": "^0.4.2"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-airbnb": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter list ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d2rd/phase-2-challenge-e.git"
+  },
+  "keywords": [
+    "LG",
+    "learners",
+    "test",
+    "phase-2"
+  ],
+  "author": "d2rd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d2rd/phase-2-challenge-e/issues"
+  },
+  "homepage": "https://github.com/d2rd/phase-2-challenge-e#readme"
+}
