@@ -1,6 +1,6 @@
 //Show a month
 /*
-  Write a function month(date) to find the month for a given Date object, returing the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
+  Write a function month(date) to find the month for a given Date object, returning the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
 
     Example:
 
@@ -9,9 +9,55 @@
 
     let christmas = new Date(2017, 11, 25) // Dec 25, 2017
     month(christmas) // returns "December"
-*/
 
-//CODE GOES HERE
+*/
+const calendar = [
+    {monthNumber: 1,
+    monthName  : "January"},
+    {monthNumber: 2,
+    monthName  : "February"},
+    {monthNumber: 3,
+    monthName  : "March"},
+    {monthNumber: 4,
+    monthName  : "April"},
+    {monthNumber: 5,
+    monthName  : "May"},
+    {monthNumber: 6,
+    monthName  : "June"},
+    {monthNumber: 7,
+    monthName  : "July"},
+    {monthNumber: 8,
+    monthName  : "August"},
+    {monthNumber: 9,
+    monthName  : "September"},
+    {monthNumber: 10,
+    monthName  : "October"},
+    {monthNumber: 11,
+    monthName  : "November"},
+    {monthNumber: 12,
+    monthName  : "December"}
+  ]
+
+function month(date){
+  // let dateInput = prompt("Please enter a date","mm/dd/yyyy");
+    let dateInput = process.argv[2];
+    console.log(dateInput);   //*****REMOVE FOR FINAL SUBMIT*****
+
+  //split dateInput into array.
+    dateInputArray = dateInput.split("/");
+    console.log(dateInputArray);
+
+  //extract month digits from dateInput
+    let getMonth = function (dateInputArray) { 
+    if (dateInputArray[0] >= 1 || dateInputArray[0] <= 12) {
+    console.log('the month is ' + getMonth);  //*****REMOVE FOR FINAL SUBMIT*****
+          return console.log('this is a valid month');
+      }
+      else {
+          return false;
+      }
+    };
+}
 
 /*-----*/
 
@@ -50,3 +96,7 @@
 //CODE GOES HERE
 
 /*-----*/
+
+
+module.exports = {month, reverseSentence, 
+nameProps}
