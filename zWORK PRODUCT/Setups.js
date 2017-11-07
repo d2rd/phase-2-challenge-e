@@ -49,18 +49,21 @@ describe('[functionName] [what function does]', function(){
       }; 
 
   //tests to be executed
-  it.only('[functionName] should [expected outcome]', function(){
-    app.[functionName](user.name = 'Samuel')
-    console.log(user)
-    expect(app.[functionName](user.name = 'Samuel')).to.own.include(user.friends = "Ralph");
+  it('[functionName] should [expected outcome]', "ERROR:  NOT A FUNCTION", function(){
+          expect(app.[functionName]).to.be.a('function');
+        }),
+  it.only('[functionName] should [expected outcome]', [OPTIONAL "ERROR MESSAGE TO RETURN"], function(){
+    app.[functionName]([argumentsToPass])
+    console.log([argumentsToPass])
+    expect(app.[functionName]([expressionToEvaluate])).to.own.include([CONDITION TO BE MET]);
     }),
 
-  it('[functionName] should add the value "Ralph" to the object whose "name" key has a value of "Annie"', "WRONG SYNTAX use both keys", function(){
-        expect(app.[functionName]({name: 'Annie'})).to.own.include({friends: "Ralph"});
+  it('[functionName] should [expected outcome]', [OPTIONAL "ERROR MESSAGE TO RETURN"], function(){
+        expect(app.[functionName]([expressionToEvaluate])).to.own.include([CONDITION TO BE MET]);
       }),
 
-  it('[functionName] should add the value "Ralph" to the object whose "name" key has a value of "Annie"',"both keys not required?", function(){
-        expect(app.[functionName]({name: 'Annie', friends: 'Ralph'})).to.own.include({friends: "Ralph"});
+  it('[functionName] should [expected outcome]', [OPTIONAL "ERROR MESSAGE TO RETURN"], function(){
+        expect(app.[functionName]([expressionToEvaluate])).to.own.include([CONDITION TO BE MET]);
       })
 });
 // /*-----*/
