@@ -120,7 +120,7 @@ Use the [`clients.json` file provided](https://gist.github.com/lg-bot/7832b0582f
 Then write two scripts that can be run using the `node` command.
 
 1. `searchByCompany.js` takes one string argument (let's call it `company`), finds all the clients from `clients.json` who have a `company` that starts with the `company` string, and prints the `id`, `company` and `phone` of each matching client.
-1. `searchByCity.js` takes one string argument (let's call it the `city`), finds all the clients from `clients.json` who have a `city` that _exactly matches_ the `city`, and prints the `id`, `rep_name`, `company`, `city`, and `state` of each matching client.
+2. `searchByCity.js` takes one string argument (let's call it the `city`), finds all the clients from `clients.json` who have a `city` that _exactly matches_ the `city`, and prints the `id`, `rep_name`, `company`, `city`, and `state` of each matching client.
 
 Your searches should not be case-sensitive: i.e. a search for "Boston" is the same as a search for "boston".
 
