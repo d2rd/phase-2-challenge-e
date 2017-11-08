@@ -9,16 +9,16 @@
     "tests": "^0.4.2"
   },
   "devDependencies": {
-    "eslint-config-google": "^0.9.1",
     "eslint-config-airbnb": "^10.2.1",
+    "eslint-config-google": "^0.9.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^4.0.0"
+    "mocha": "^4.0.1"
   },
   "scripts": {
-    "test": "mocha --reporter list ./test"
+    "test": "mocha --reporter list ./part-1/test"
   },
   "repository": {
     "type": "git",

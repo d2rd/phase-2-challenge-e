@@ -1,6 +1,6 @@
 //Show a month
 /*
-  Write a function month(date) to find the month for a given Date object, returing the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
+  Write a function month(date) to find the month for a given Date object, returning the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
 
     Example:
 
@@ -9,9 +9,15 @@
 
     let christmas = new Date(2017, 11, 25) // Dec 25, 2017
     month(christmas) // returns "December"
+
 */
 
-//CODE GOES HERE
+function month(date) {
+  let monthName = date.getMonth() -1;
+  console.log(calendar[monthName]);
+};
+month(new Date(1953, 6, 5));
+//  month(new Date(1953, 6, 5));
 
 /*-----*/
 
@@ -50,3 +56,8 @@
 //CODE GOES HERE
 
 /*-----*/
+
+
+module.exports = {month}
+// module.exports = {month, reverseSentence, 
+// nameProps}
