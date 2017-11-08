@@ -35,7 +35,79 @@ describe('month find the month for a given Date object, returning the name of th
 // /*-----*/
 
 //reverseSentence()
+//Requirements
+  // Write a function reverseSentence(string) that takes a string of words and returns a string with the words in reverse order. If there is only one word in the string return it unchanged. Consider any series of non-space characters a word.
+//[functionName]
+describe('[functionName] [what function does]', function(){
+  //declared objects/arrays
+    let [arrayName] = [
+      {
+        'name'    :'Samuel', 
+        'friends' :[]
+      },
+      {
+        'name'    : 'Ralph', 
+        'friends' : []
+      },
+      {
+        'name'    : 'Annie',
+        'friends' : []
+      }
+    ]; 
 
+  let [objName] = 
+      {
+        'key1' :'value1', 
+        'key2' :[],
+        'key3' :'value3'
+      },
+      {
+        'key1' :'value1', 
+        'key2' :[],
+        'key3' :'value3'
+      },
+      {
+        'key1' :'value1', 
+        'key2' :[],
+        'key3' :'value3'
+      }; 
 
-//nameProps()
+  //tests to be executed
+  it('[functionName] should [expected outcome]', "ERROR:  NOT A FUNCTION", function(){
+          expect(app.[functionName]).to.be.a('function');
+        }),
+  it.only('[functionName] should [expected outcome]', [OPTIONAL "ERROR MESSAGE TO RETURN"], function(){
+    app.[functionName]([argumentsToPass])
+    console.log([argumentsToPass])
+    expect(app.[functionName]([expressionToEvaluate])).to.own.include([CONDITION TO BE MET]);
+    }),
 
+  it('[functionName] should [expected outcome]', [OPTIONAL "ERROR MESSAGE TO RETURN"], function(){
+        expect(app.[functionName]([expressionToEvaluate])).to.own.include([CONDITION TO BE MET]);
+      }),
+
+  it('[functionName] should [expected outcome]', [OPTIONAL "ERROR MESSAGE TO RETURN"], function(){
+        expect(app.[functionName]([expressionToEvaluate])).to.own.include([CONDITION TO BE MET]);
+      })
+});
+// /*-----*/
+
+//nameProps
+// Write a function nameProps(obj) that returns the names of the properties an object has in alphabetical order. Ignore symbolic properties and count only the "own properties" (not inherited) of the object.
+describe('nameProps returns the names of the properties an object has in alphabetical order.', function(){
+  //declared objects/arrays
+    let friend = {
+  name: 'Dominique',
+  age: 30,
+  phone: '555-555-5555'
+};
+  //tests to be executed
+    it('app.nameProps() to be a function', function(){
+          expect(nameProps).to.be.a('function');
+        }),
+
+    it('nameProps() list the properties of "obj" in alphabetical order', function(){
+        expect(nameProps(obj)).to.be.have.ordered.members;
+      }) 
+});
+// /*-----*/

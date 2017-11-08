@@ -1,0 +1,43 @@
+//addFriend
+describe('addFriend adds the value of "newFriend" to the end of the "user" array then returns the user object.', function(){
+  //declared objects/arrays
+    let user = [
+      {
+        'name'    :'Samuel', 
+        'friends' :[]
+      },
+      {
+        'name'    : 'Ralph', 
+        'friends' : []
+      },
+      {
+        'name'    : 'Annie',
+        'friends' : []
+      }
+    ]; 
+
+  //tests to be executed
+  it('addFriend should add the value "Ralph" to the object whose "name" key has a value of "Samuel"', function(){
+      expect(app.addFriend({name: 'Samuel'})).to.own.include({friends: "Ralph"});
+    }),
+//OR
+   expect(app.addFriend(user.friends = {name: 'Samuel'})).to.own.include(user.friends = "Ralph");
+   expect(app.addFriend(user).to.own.include(user.name = 'Samuel' && user.friends = 'Ralph');
+
+//OR
+
+
+     expect(app.addFriend(user.name = 'Samuel')).to.own.include(user.friends = "Ralph");
+
+//OR
+    
+
+  // it('addFriend should add the value "Ralph" to the object whose "name" key has a value of "Annie"', "WRONG SYNTAX use both keys", function(){
+  //       expect(app.addFriend({name: 'Annie'})).to.own.include({friends: "Ralph"});
+  //     }),
+
+  // it('addFriend should add the value "Ralph" to the object whose "name" key has a value of "Annie"',"both keys not required?", function(){
+  //       expect(app.addFriend({name: 'Annie', friends: 'Ralph'})).to.own.include({friends: "Ralph"});
+  //     })
+});
+// /*-----*/
